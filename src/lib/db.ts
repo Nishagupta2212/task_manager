@@ -1,6 +1,6 @@
-import { collection, doc, getDoc, getDocs, setDoc, updateDoc, deleteDoc, query, where, orderBy, addDoc } from 'firebase/firestore';
+import { collection, doc, getDocs, setDoc, updateDoc, deleteDoc, query, where, orderBy, addDoc } from 'firebase/firestore';
 import { db } from './firebase';
-import type { Project, Task, User, Role } from '../types';
+import type { Project, Task, User } from '../types';
 
 // Users
 export const createUserProfile = async (uid: string, data: Omit<User, 'id' | 'createdAt'>) => {

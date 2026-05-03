@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { getTasksByAssignee, getAllTasks } from '../lib/db';
 import type { Task } from '../types';
-import { CheckCircle, Clock, AlertCircle, Activity, ArrowUpRight } from 'lucide-react';
+import { CheckCircle, Clock, AlertCircle, Activity } from 'lucide-react';
 import { format } from 'date-fns';
 
 export const Dashboard: React.FC = () => {
