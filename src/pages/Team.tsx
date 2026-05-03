@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { getUsers, approveUser } from '../lib/db';
 import type { User } from '../types';
-import { Users, Mail, Clock, CheckCircle, ShieldCheck } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import { format } from 'date-fns';
 
 export const Team: React.FC = () => {
